@@ -12,11 +12,12 @@ class DishesController < ApplicationController
   # GET /dishes/1
   # GET /dishes/1.json
   def show
+    redirect_to action: "edit"
   end
 
   # GET /dishes/new
   def new
-    @dish = Dish.new
+    @dish = Dish.new(course_id: params[:course_id])
   end
 
   # GET /dishes/1/edit
@@ -30,7 +31,7 @@ class DishesController < ApplicationController
 
     respond_to do |format|
       if @dish.save
-        format.html { redirect_to @dish, notice: 'Dish was successfully created.' }
+        format.html { redirect_to @dish }
         format.json { render :show, status: :created, location: @dish }
       else
         format.html { render :new }

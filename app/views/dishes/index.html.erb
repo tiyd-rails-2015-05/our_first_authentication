@@ -3,7 +3,7 @@
 <h1>Dish List</h1>
 
 <% @courses.each do |course| %>
-  <p><%= course.name %></p>
+  <div><%= course.name %> <span><td><%= link_to 'Add Dish', new_dish_path(course_id: course.id) %></td></span></div>
   <table>
     <thead>
       <tr>
@@ -17,12 +17,9 @@
     <tbody>
       <% course.dishes.each do |dish| %>
         <tr>
-          <td><%= dish.name %></td>
-          <td><%= dish.price %></td>
+          <td><%= link_to dish.name, edit_dish_path(dish) %></td>
+          <td><%= number_to_currency(dish.price) %></td>
           <td><%= dish.description %></td>
-          <td><%= link_to 'Show', dish %></td>
-          <td><%= link_to 'Edit', edit_dish_path(dish) %></td>
-          <td><%= link_to 'Destroy', dish, method: :delete, data: { confirm: 'Are you sure?' } %></td>
         </tr>
       <% end %>
     </tbody>
