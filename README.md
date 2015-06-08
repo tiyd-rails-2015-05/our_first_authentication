@@ -2,34 +2,6 @@
 
 ## Description
 
-Create an online menu for a restaurant with a fixed number of categories and images for each category.  Allow users to enter new dishes and display them on a single menu page.
-
-## Objectives
-
-After completing this assignment, you should...
-
-* Understand REST and when to break it
-* Understand the Rails Asset Pipeline
-* Understand how Rails uses gems
-* Understand workflow design
-
-After completing this assignment, you should be able to effectively...
-
-* Use images as part of the Asset Pipeline
-* Use SCSS as part of the Asset Pipeline
-* Utilize Rails redirects
-* Use Heroku to serve up images from the asset pipeline
-* Start putting cleaner style on your apps
-
-## Deliverables
-
-* **A repository.** Fork this repository to your own github account.
-* **A README.** Wipe out this README and write your own.  It should include a link to the app running on Heroku.
-* **A working Rails app on Heroku.**
-* **A test suite.** Build your application using TDD.  Your test suite must include unit tests and controller tests.
-* **A workflow diagram.**  Any format is fine, including paper.
-
-Continue to #shipit!
 
 ## Normal Mode
 
@@ -48,20 +20,3 @@ This application will require the following:
 * The application should utilize the (a) variable assignment and (b) selector nesting features of SCSS.
 * The application may utilize Bootstrap.
 * The application should be deployed to Heroku.
-
-## Hard Mode
-
-Hard mode requires the addition of two features:
-
-* Users should be able to add URLs to images for each dish, but only SOME of them should be displayed on the menu.  Figure out some way to show only the best ones.
-* Add another layer of complexity to the menu.  Menus can now have mealtimes (breakfast, lunch, dinner).  Each mealtime will still have courses, which will still have dishes.  These courses are not consistent across mealtimes (e.g. Breakfast might have "Pastries" and "Meats" while Lunch might have "Sandwiches" and "Desserts").
-
-## Nightmare Mode
-
-Rather than allowing users to paste in URLs of images, require them to UPLOAD the images.  This is harder than having images for each course (set up by you, the developer).  This is user-created imagery.
-
-## Additional References
-
-* [Bootstrap](http://getbootstrap.com/)
-* [SCSS Guide](http://sass-lang.com/)
-* [The Asset Pipeline on Heroku](https://devcenter.heroku.com/articles/rails-4-asset-pipeline)
