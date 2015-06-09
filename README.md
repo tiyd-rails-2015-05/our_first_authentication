@@ -1,4 +1,4 @@
-# Restaurant Menu
+# Restauranty
 
 ## Description
 This app is allows a restaurant to update and add to it's menu.  The user's can
