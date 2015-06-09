@@ -1,5 +1,13 @@
-<h1>New Dish</h1>
+<p id="notice"><%= notice %></p>
 
-<%= render 'form' %>
+<div class="col-xs-12 col-sm-10 col-md-8 col-lg-8">
+  <div class="col-xs-12 col-sm-10 col-md-8 col-lg-8">
+    <h2>New Dish</h2>
+  </div>
 
-<%= link_to 'Main Page', root_path %>
+  <%= render 'form' %>
+
+  <div class="col-xs-12 col-sm-10 col-md-8 col-lg-8">
+    <%= link_to 'Main Page', root_path, class: "btn btn-default", role: "button" %>
+  </div>
+</div>
