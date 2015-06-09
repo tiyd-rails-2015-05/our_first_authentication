@@ -11,4 +11,8 @@ If a new course needs to be added, the developer must do so.
 * Users can destroy a dish by going to the dish's edit page and then hitting a delete button on that page.
 * Users can not edit courses.  Those should be set up by the developer through seeds.
 * The application utilizes Bootstrap.
-* The application is deployed to Heroku.
+* The application is deployed to Heroku and accesed by the following link:
+  (Restauranty)[https://obscure-waters-4736.herokuapp.com/]
+
+### Workflow and ERD
+The Workflow Diagram and ERD can be found (here)[https://www.lucidchart.com/invitations/accept/dfed0dda-5c21-4c31-abb7-b82c93f76ef4]
