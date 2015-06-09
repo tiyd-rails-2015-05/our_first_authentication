@@ -25,7 +25,7 @@ class DishesControllerTest < ActionController::TestCase
   end
 
   test "should show dish" do
-    get :show, id: @dish
+    get :edit, id: @dish
     assert_response :success
   end
 
