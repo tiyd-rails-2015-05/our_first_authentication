@@ -1,5 +1,17 @@
 Rails.application.routes.draw do
-  resources :dishes
+  get 'login/login'
+
+  get 'login/logout'
+  post 'login/login'
+  resources :users
+  resources :dishes do
+    collection do
+      get 'menu'
+    end
+    member do
+      get 'preview'
+    end
+  end
   root 'dishes#index'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
